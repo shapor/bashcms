@@ -28,11 +28,11 @@ order: (one line) the list of files to generate, in the order they will be displ
 header.html: Top of all the html files, followed by the generated menu
 middle.html: displayed between the menu and the .index.html content
 footer.html: take a wild guess :)
+title: the text to be displayed in the <title> tag in the header (default: bashcms)
 
 Metadata files:
 .name: (optional) contains the link name to be displayed in the tab header
 .index.html: the content of the file to be generated
 
 TODO:
-add <title> support in headers
 add subtab support

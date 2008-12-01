@@ -1,4 +1,4 @@
 all:
 	./make.sh
 clean:
-	rm *.html
+	./make.sh clean

@@ -1,0 +1,38 @@
+bashcms
+-------
+
+Version: 0.1
+Author: Shapor Naghibzadeh
+
+bashcms was originally written to generate the html for the http://tux3.org
+website.  It uses html stub file and a some simple metadata file, which are
+included as an example.
+
+The html used for the templates is from the following css tab example:
+http://labs.silverorange.com/images/tabsupdate/index.html
+
+Simply running "make" will generate html files.
+Pages to generate are listed in .templates/order
+Their metadata is store in directories:
+$ cat .templates/order
+index about
+$ tree -a index about
+index
+|-- .index.html
+`-- .name
+about
+`-- .index.html
+
+Template files:
+order: (one line) the list of files to generate, in the order they will be displayed
+header.html: Top of all the html files, followed by the generated menu
+middle.html: displayed between the menu and the .index.html content
+footer.html: take a wild guess :)
+
+Metadata files:
+.name: (optional) contains the link name to be displayed in the tab header
+.index.html: the content of the file to be generated
+
+TODO:
+add <title> support in headers
+add subtab support

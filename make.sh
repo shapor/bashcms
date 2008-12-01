@@ -16,7 +16,7 @@ if [[ $1 == "clean" ]]; then
 	echo "cleaning up generated files..."
 	for name in */.index.html; do
 		echo rm ${name/\/*/}.html
-		rm ${name/\/*/}.html
+		rm ${name/\/*/}.html || true
 	done 2>/dev/null
 	exit
 fi
